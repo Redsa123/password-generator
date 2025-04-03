@@ -1,0 +1,86 @@
+/* Mobile styles - applies below 768px width */
+.container {
+    width: 90%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 15px 0 20px 0; /* Added top margin */
+    text-align: center;
+}
+
+.password-container {
+    flex-direction: column;
+    gap: 10px; /* Better spacing */
+}
+
+.password {
+    width: 100%;
+    margin-bottom: 0; /* Removed bottom margin since we have gap */
+    padding: 12px;
+    font-size: 16px; /* Slightly smaller font for mobile */
+}
+
+.copy-btn {
+    width: auto; /* Not full width anymore */
+    padding: 8px 16px; /* More compact */
+    font-size: 14px;
+    align-self: flex-end; /* Align to right */
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+/* Fix range input for mobile */
+input[type="range"] {
+    width: 100%;
+    height: 30px; /* Taller for touch */
+    -webkit-appearance: none;
+    background: #e0e0e0;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    background: #3498db;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Better checkbox styling */
+.option-item {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.option-item input[type="checkbox"] {
+    transform: scale(1.4);
+    margin-right: 12px;
+    accent-color: #3498db; /* Modern browsers */
+}
+
+.option-item label {
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+/* Generate button */
+button#generate {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin: 10px 0 20px;
+}
+
+/* Strength meter adjustments */
+.strength-meter {
+    margin-top: 15px;
+    height: 12px;
+}
