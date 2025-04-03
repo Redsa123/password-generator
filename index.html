@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Strong Password Generator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Strong Password Generator</h1>
+
+            <div class="controls">
+                <label for="length"
+                    >Password Length: <span id="length-value">12</span></label
+                >
+                <input type="range" id="length" min="4" max="50" value="12" />
+            </div>
+
+            <div class="options">
+                <div class="option-item">
+                    <input type="checkbox" id="uppercase" checked />
+                    <label for="uppercase"
+                        >Include Uppercase Letters (A-Z)</label
+                    >
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="lowercase" checked />
+                    <label for="lowercase"
+                        >Include Lowercase Letters (a-z)</label
+                    >
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="numbers" checked />
+                    <label for="numbers">Include Numbers (0-9)</label>
+                </div>
+                <div class="option-item">
+                    <input type="checkbox" id="symbols" checked />
+                    <label for="symbols">Include Symbols (!@#$%^&*)</label>
+                </div>
+            </div>
+
+            <button id="generate">Generate Password</button>
+
+            <div class="result" id="result" style="display: none">
+                <div class="password-container">
+                    <div class="password" id="password"></div>
+                    <button class="copy-btn" id="copy">Copy</button>
+                </div>
+                <div class="strength-meter">
+                    <div class="strength-bar" id="strength-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
