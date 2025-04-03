@@ -1,13 +1,13 @@
 /* Mobile styles - applies below 768px width */
 .container {
     width: 90%;
-    /* padding: 20px; */
+    padding: 20px;
     margin: 0 auto;
 }
 
 h1 {
     font-size: 24px;
-    /* margin: 15px 0 20px 0; Added top margin */
+    margin: 15px 0 20px 0;
     text-align: center;
 }
 
