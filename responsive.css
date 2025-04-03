@@ -1,7 +1,7 @@
 /* Mobile styles - applies below 768px width */
 .container {
     width: 90%;
-    padding: 20px;
+    /* padding: 20px; */
     margin: 0 auto;
 }
 
